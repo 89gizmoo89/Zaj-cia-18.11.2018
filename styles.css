@@ -1,0 +1,85 @@
+/*@font-face{
+    font-family: "bardzo fajna"
+        src: url("link do pliku załączonym w dokumencie")}
+        żeby użyć tej czcionki to w font-family wpisujemy swoja wymyślona nazwę czcionki
+*/
+
+div.myform label{
+    display: block;
+    width: 30vw;
+    min-width: 5cm;
+    float: left;  
+}
+div.myform input {
+    display: block;
+}
+div.myform input[name^="email"]{
+    background-color: blanchedalmond;
+    border-style: solid;
+    border-width: 1px ;
+    border-radius: 8px ;
+    padding: .3em;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    
+}
+div.myform input[name$="email"]{
+    background-color: silver;
+    background-image: url( ikona-koperta.png);
+    background-position: center;
+    background-size: 15%;
+    background-repeat: no-repeat;
+    
+}
+div.nowyformularz label{
+    display: block;
+    width: 30vw;
+    min-width: 5cm;
+    float: left;
+}
+div.nowyformularz input {
+    display: block;
+     width: 200px;
+     
+}
+div.nowyformularz input:focus {
+    background-color: yellow;   
+}
+div.nowyformularz input[name="button"]{
+    background-color: burlywood;
+    border-style: solid;
+    border-width: 2px ;
+    border-radius: 6px ;
+    padding: .4em;
+    text-align: center;
+    font-family: Times New Roman;
+    font-size: 10pt;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: -.1em;
+}
+div.nowyformularz input[type="button"]:active {
+   border: 6px inset gray;
+}
+/*div.myform input[name$="email"]{
+    background-color: silver;
+}*/
+/*
+a[href^="http://"],a[href^="https://"] {
+    background-color: lightcoral;
+}
+a[href^="mailto:"]{
+    background-color: lightgreen;
+}
+a[href^="mailto:"]:before{
+   background-color: lightblue;
+   content: "Poczta:"; 
+}
+a[href*="wp"]{
+    visibility: hidden;
+     można też dosplay: none; w takliej sytuacji nie widać miejsca, w którymś cos było
+}*/
